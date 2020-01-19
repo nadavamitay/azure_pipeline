@@ -13,3 +13,5 @@ steps:
 - script: |
     make
   displayName: 'make'
+- script : gcc new_file.c
+- script : ./a.out
