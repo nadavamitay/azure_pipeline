@@ -10,12 +10,11 @@ pool:
   vmImage: 'ubuntu-latest'
 
 
-jobs:
-- job:
-  steps:
-  - script: |
-      make
-    displayName: 'make'
-  - script : gcc new_file.c
-  - script : ./a.out
+
+steps:
+- script: |
+    make
+  displayName: 'make'
+- script : gcc new_file.c
+- script : ./a.out
           
